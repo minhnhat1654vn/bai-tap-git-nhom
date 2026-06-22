@@ -1,6 +1,6 @@
-def tinh_thue_thu_nhap(thu_nhap):
-    # Kết hợp logic của Dev A và Dev B
-    thu_nhap_tinh_thue = thu_nhap - 4000000
-    return max(0, thu_nhap_tinh_thue * 0.1)
+def tinh_diem_gpa(diem_so):
+    if diem_so >= 8.5: return 4.0
+    elif diem_so >= 7.0: return 3.0
+    else: return 2.0
 
-print("Thuế phải nộp của bạn là:", tinh_thue_thu_nhap(10000000))
+print("Điểm GPA hệ 4 của bạn là: ", tinh_diem_gpa(8.0))
